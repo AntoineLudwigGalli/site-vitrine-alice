@@ -13,7 +13,7 @@
  *
  * Learn more in https://angular.io/guide/browser-support
  */
-
+ import 'node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 /***************************************************************************************************
  * BROWSER POLYFILLS
  */

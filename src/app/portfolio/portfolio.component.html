@@ -1,0 +1,124 @@
+<div class="row text-center my-4">
+    <h1>Portfolio</h1>
+    <span class="toggle-portfolio-button col-2 mx-auto py-3 mt-3"
+    (click)="togglePortfolioList()"
+    >Affichage de la liste
+    </span>
+</div>
+
+<div class="row"
+    *ngIf="!portfolioList">
+    <div id="carouselExampleCaptions" class="carousel slide col-6 mx-auto" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <a href="http://localhost:8000" target="_blank"><img src="../../assets/images/header-batblog.png" class="d-block img-fluid" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Le BatBlog</h5>
+                <p>Un site de blog créé entièrement avec le grand, le beau, le merveilleux Symfony 6</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#" target="_blank"><img src="../../assets/images/header-batblog.png" class="d-block img-fluid" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <a href="#" target="_blank"><img src="../../assets/images/header-batblog.png" class="d-block img-fluid" alt="..."></a>
+            <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            </div>
+        </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+<div
+    *ngIf="portfolioList"
+>
+<!-- ------------------------------------------------ -->
+<!-- Test Flip Card -->
+
+
+
+<div class="row">
+    <div class="flip col-3 offset-1">
+        <div class="front" style="background-image: url(../../assets/images/batman-lowcost-card2.jpg)">
+        <h1 class="text-shadow">The BatBlog</h1>
+        </div>
+        <div class="back">
+        <h2>The BatBlog</h2>
+        <p>Le blog du célèbre justicier réalisé avec l'inégalé Symfony 6 !</p>
+        </div>
+    </div>
+
+    <div class="flip col-3 offset-1">
+        <div class="front" style="background-image: url(../../assets/images/batman-lowcost-card2.jpg)">
+        <h1 class="text-shadow">The BatBlog</h1>
+        </div>
+        <div class="back">
+            <h2>The BatBlog</h2>
+            <p>Le blog du célèbre justicier réalisé avec l'inégalé Symfony 6 !</p>
+        </div>
+    </div>
+
+    <div class="flip col-3 offset-1">
+        <div class="front" style="background-image: url(../../assets/images/batman-lowcost-card2.jpg)">
+        <h1 class="text-shadow">The BatBlog</h1>
+        </div>
+        <div class="back">
+            <h2>The BatBlog</h2>
+            <p>Le blog du célèbre justicier réalisé avec l'inégalé Symfony 6 !</p>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <div class="flip col-3 offset-1">
+            <div class="front" style="background-image: url(../../assets/images/batman-lowcost-card2.jpg)">
+            <h1 class="text-shadow">The BatBlog</h1>
+            </div>
+            <div class="back">
+                <h2>The BatBlog</h2>
+                <p>Le blog du célèbre justicier réalisé avec l'inégalé Symfony 6 !</p>
+            </div>
+        </div>
+    
+        <div class="flip col-3 offset-1">
+            <div class="front" style="background-image: url(../../assets/images/batman-lowcost-card2.jpg)">
+            <h1 class="text-shadow">The BatBlog</h1>
+            </div>
+            <div class="back">
+                <h2>The BatBlog</h2>
+                <p>Le blog du célèbre justicier réalisé avec l'inégalé Symfony 6 !</p>>
+            </div>
+        </div>
+    
+        <div class="flip col-3 offset-1">
+            <div class="front" style="background-image: url(../../assets/images/batman-lowcost-card2.jpg)">
+            <h1 class="text-shadow">The BatBlog</h1>
+            </div>
+            <div class="back">
+                <h2>The BatBlog</h2>
+                <p>Le blog du célèbre justicier réalisé avec l'inégalé Symfony 6 !</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->

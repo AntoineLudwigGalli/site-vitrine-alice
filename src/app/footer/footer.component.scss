@@ -1,0 +1,23 @@
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.navbar #navbarNav ul li .nav-link{
+    color: rgb(211, 217, 230);
+    border:  2px;
+    padding: 10px;
+    margin: 5px;
+}
+#footer .navbar #navbarNav ul li a:hover{
+    border-radius: 5px;
+    border: solid white 2px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: rgba(#ffffff, 0.3);
+    color: white;
+}
+

@@ -1,0 +1,54 @@
+<div class="overlay"
+    *ngIf="displayDiv"
+    (click) = "deleteOverlay()"
+    >
+    <app-career-bank 
+    class="overlay-content"
+    *ngIf="displayDivBank"
+    (click)="displayDiv"
+    ></app-career-bank>
+
+    <app-career-dev 
+    class="overlay-content"
+    *ngIf="displayDivDev"
+    (click)="displayDiv"
+    ></app-career-dev>
+
+    <app-career-other 
+    class="overlay-content"
+    *ngIf="displayDivOther"
+    (click)="displayDiv"
+    ></app-career-other>
+
+</div>
+<div class="row text-center my-3">
+    <h1>Mon parcours</h1>
+</div>
+<div class="row justify-content-evenly my-4">
+    <div class="round-image-button col-3"
+        (click)="createOverlay()"
+        (click)="displayDivOther = true"
+        >
+        <img src="../../assets/images/guitar.jpg"alt="">
+    </div>
+    <div class="round-image-button col-3"
+        (click)="createOverlay()"
+        (click)="displayDivDev = true"
+        >
+        <img src="../../assets/images/dev-code.jpg"alt="">
+    </div>
+    <div class="round-image-button col-3"
+        (click)="createOverlay()"
+        (click)="displayDivBank = true"
+        >
+        <img src="../../assets/images/bank.jpg"alt="">
+    </div>
+</div>
+
+<div class="row">
+    <div class="text-center ">
+        <a href="#" class="text-light">Télécharger mon CV</a>
+    </div>
+</div>
+
+

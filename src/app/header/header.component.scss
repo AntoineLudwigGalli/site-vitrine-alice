@@ -1,0 +1,39 @@
+#header .navbar #navbarNav ul li .nav-link{
+    border-radius: 5px;
+    border: solid white 2px;
+    padding: 10px;
+    margin: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: rgba(#ffffff,0.3);
+    color: rgb(43, 54, 88);
+}
+
+#header .navbar #navbarNav ul li .nav-link:hover{
+    background-color: rgba($color: #443636, $alpha: 0.3);
+    color: white;
+}
+
+#header #main-logo{
+    mix-blend-mode: multiply;
+}
+
+#header .logo{
+    mix-blend-mode: multiply;
+    width: 1rem;
+    
+}
+
+#header{
+    margin: 0;
+    border-radius: 5px;
+    border: solid black 2px;
+    // background-image: url(../../assets/images/spiderweb.jpg);
+    background-color: #EDBB40;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
